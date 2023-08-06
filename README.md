@@ -29,9 +29,32 @@ pip install requests beautifulsoup4 smtplib dnspython
 EMAIL=your_email@gmail.com
 PASSWORD=your_email_password
 ```
-<br />
-Replace `your_email@gmail.com` with your Gmail address, and `your_email_password` with your Gmail password or an application-specific password if you have two-factor authentication enabled.
+
+Replace `your_email@gmail.com` with your Gmail address, and `your_email_password` with your Gmail password. 
+
+# Note!! 
+If you have two-factor authentication (2FA) enabled on your Gmail account, you'll need to generate an "App password" to use in the script. Follow these steps to generate an App password:
 <br /><br />
+Go to your Google Account settings: https://myaccount.google.com/
+<br />
+Click on "Security" in the left menu.
+<br />
+Under the "Signing in to Google" section, click on "App passwords."
+<br />
+If prompted, enter your Google account password.
+<br />
+Select "Mail" as the app and "Other (Custom name)" as the device.
+<br />
+Click "Generate."
+<br /><br />
+Google will generate an App password for you. Copy this password.
+<br /><br />
+In your .env file, replace the value of PASSWORD with the generated App password.]
+With the App password, the script will be able to log in to your Gmail account securely and send email notifications. Make sure to keep your App password confidential and do not share it with others.
+
+### *Note*: 
+If you don't have two-factor authentication enabled on your Gmail account, you can use your regular Gmail password as the PASSWORD environment variable in the .env file. However, it's highly recommended to enable 2FA for improved account security.
+<br /><br /><br />
 4. Run the script:
 
 ```python
