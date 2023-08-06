@@ -38,7 +38,7 @@ while True:
         # Sender's credentials
         smt.login(email, password)
 
-        recipients = ['chiragtiwari778@gmail.com']
+        recipients = ['Recept_name1','Recept_name2', ...]
         smt.sendmail(email, recipients,
                     f"Subject: Headphones Price Notifier\n\nHi, price has dropped to {price}. Go buy it now!")
 
