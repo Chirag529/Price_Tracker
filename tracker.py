@@ -20,7 +20,7 @@ while True:
 
     soup = BeautifulSoup(res, 'html.parser')
     # print(soup.prettify)
-    price_str = soup.find('div', attrs={'class': '_30jeq3 _16Jk6d'}).text[1:]  # type: ignorep
+    price_str = soup.find('div', attrs={'class': '_30jeq3 _16Jk6d'}).text[1:]  # type: ignore
     # Remove the comma from the price text as it is not recognized as a valid float representation.
     price_str = price_str.replace(',', '')
     # Convert the modified price string to a float
