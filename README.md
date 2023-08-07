@@ -55,11 +55,21 @@ With the App password, the script will be able to log in to your Gmail account s
 ### *Note*: 
 If you don't have two-factor authentication enabled on your Gmail account, you can use your regular Gmail password as the PASSWORD environment variable in the .env file. However, it's highly recommended to enable 2FA for improved account security.
 <br /><br /><br />
-4. Run the script:
 
+### Usage
+Modify the product_url variable in price_notifier.py with the URL of the product you want to monitor.
+
+Customize the threshold price (currently set to 60,000 Indian Rupees) in price_notifier.py to your desired value.
+
+Customize the recipient list by modifying the recipients variable in price_notifier.py.
+
+Run the script to start monitoring the price.
 ```python
-python price_monitor.py
+python tracker.py
 ```
+The script will run daily and send email notifications to the specified recipients when the price drops below the threshold.
+<br /><br />
+
 <br /><br />
 The script will start monitoring the price of the Apple iPhone 13 on Flipkart. If the price drops below Rs 60,000, it will send an email notification to the provided email address.
 <br /><br />
