@@ -32,7 +32,7 @@ PASSWORD=your_email_password
 
 Replace `your_email@gmail.com` with your Gmail address, and `your_email_password` with your Gmail password. 
 
-# Note!! 
+# Pre-requisite!! 
 If you have two-factor authentication (2FA) enabled on your Gmail account, you'll need to generate an "App password" to use in the script. Follow these steps to generate an App password:
 <br /><br />
 Go to your Google Account settings: https://myaccount.google.com/
